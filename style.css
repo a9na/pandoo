@@ -1,3 +1,21 @@
+.common-button, .header .nav__button {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.common-text {
+  font-size: 18px;
+  margin-left: 12px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -7,4 +25,40 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+}
+
+.header {
+  background-color: #64e361;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 120px;
+  height: 51.75px;
+  margin-left: 6px;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  margin-right: 20px;
+}
+.header .nav ul li:last-child {
+  margin-right: 20px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
