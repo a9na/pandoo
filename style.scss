@@ -1,3 +1,10 @@
+// Variables
+$primary-color: #64e361;
+$secondary-color: #333;
+$text-color: #444;
+$white-color: #fff;
+$border-radius: 5px;
+
 // Mixins
 @mixin global-font {
     font-family: 'Raleway', sans-serif; 
@@ -12,5 +19,5 @@ body {
     @include global-font;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: $white-color;
 }
