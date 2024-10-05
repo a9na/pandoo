@@ -96,3 +96,124 @@ body {
     }
 }
 
+// Hero Section
+.hero {
+    background-image: url('public/images/wind-turbines.png');       
+    height: 400px;
+    color: $white-color;
+
+    @include flex-center;
+    justify-content: space-between;
+    padding: 50px;
+
+    &__content {
+        max-width: 50%;
+        .paragraph-container {
+            display: flex;
+            background-color: $primary-color;
+            width: 627px;
+            height: 228px;
+            opacity: 1; 
+            justify-content: flex-end; 
+            align-items: center; 
+            margin-left: 40px;
+        }
+        
+        .paragraph {
+            background-color: $secondary-color; 
+            width: 595px;
+            height: 100%; 
+            opacity: 1; 
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-left: 12px;
+        }
+
+        p {
+            @extend .common-text; 
+        }
+    }
+
+    img {
+        max-width: 50%;
+    }
+}
+
+// Cards Section
+.cards-section {
+    text-align: center;
+    background-color: $white-color;
+    padding: 40px 20px;
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            font-style: italic;
+        }
+
+        .card {
+            background-color: $secondary-color; 
+            padding: 20px;
+            color: $white-color;
+            max-width: 600px; 
+            margin: 32px 8px; 
+            text-align: left;
+
+            &__header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px; 
+
+                &__icon {
+                    background-color: #38D377; 
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px; 
+                }
+                
+                &__icon img {
+                    width: 50%; 
+                    height: auto;
+                }
+            }
+        }
+        
+        .card-text-container {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+
+            .card-title, .card-subtitle {
+                display: block;
+            }
+        }
+
+        .card-title {
+            font-size: 24px;
+            color: white;
+            margin: 10px 2px;
+        }
+        
+        .card-subtitle {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin: 0;
+        }
+    }
+}
+
