@@ -333,5 +333,121 @@ body {
   font-size: 0.9rem;
   text-transform: uppercase;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+}
+
+.footer {
+  color: #333;
+  padding: 0;
+  margin: 0;
+  background-color: #64e361;
+  position: relative;
+}
+.footer__logo {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.footer__content p {
+  margin: 0;
+}
+.footer__content .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.footer__content .info__heading {
+  font-size: 24px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.footer__content .info .company-adress {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.footer__content .info .company-adress a {
+  text-decoration: none;
+  color: #333;
+}
+.footer__links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer__links .company,
+.footer__links .products {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 250px;
+}
+.footer__links .company__heading,
+.footer__links .products__heading {
+  font-weight: 700;
+}
+.footer__links .company__info,
+.footer__links .products__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0;
+}
+.footer__links .company__info a,
+.footer__links .products__info a {
+  text-decoration: none;
+  color: #333;
+}
+.footer__socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__socials__heading {
+  font-weight: 700;
+}
+.footer__socials__icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.footer__socials__icons a {
+  margin-right: 20px;
+}
+.footer__bottom {
+  position: absolute;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer__bottom__links {
+  margin-right: 50px;
+}
+.footer__bottom__trademark {
+  margin-left: 30px;
+}
+.footer__bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
