@@ -217,3 +217,190 @@ body {
     }
 }
 
+// Article Container
+.article-container {
+    background-color: $text-color;
+    color: $white-color;
+    padding: 40px 20px;
+
+    &__windmill {
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center; 
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &__wind-farm {
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: center; 
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .windmill-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+
+        &__text {
+            margin-right: 100px;
+            padding-bottom: 120px;
+        }
+           
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 42.26px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            text-align: left;
+        }    
+    }
+
+    .wind-farm-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+
+        &__text {
+            margin-left: 100px;
+            padding-bottom: 60px;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 42.26px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            text-align: left;
+        }    
+    }
+
+.image {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    background-color: $primary-color; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 40px;
+
+        &__windmill {
+            width: 664px;
+            height: 480px;
+            background-image: url('public/images/windmill.png');  
+            background-size: cover; 
+            background-repeat: no-repeat;
+            margin-right: auto;
+        }
+
+
+        &__wind-farm {
+            width: 664px;
+            height: 480px;
+            background-image: url('public/images/wind-farm.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: auto;
+        }
+    }
+
+    .learn-more {
+        @include button($primary-color, $secondary-color);
+        width: 264px;
+        height: 72px;
+        top: 2892px;
+        left: 828px;
+        gap: 0px;
+        border-radius: 12px 12px 12px 12px;
+        opacity: 0px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.13px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+// Form Styles
+.newsletter-signup {
+    background-color: $white-color;
+    padding: 20px 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+
+    &__input {
+        position: relative;
+        width: 400px; 
+        
+        input {
+            width: 100%;
+            height: 50px; 
+            padding-right: 110px; 
+            padding-left: 20px; 
+            border: 1px solid #ccc;
+            border-radius: 12px; 
+            box-sizing: border-box;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+            &::placeholder {
+                font-style: italic;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%); 
+            height: 60%; 
+            padding: 0 18px;
+            border: none;
+            border-radius: 12px; 
+            background-color: $primary-color; 
+            color: $secondary-color;
+            font-weight: bolder;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+}
+
+
