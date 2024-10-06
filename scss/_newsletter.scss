@@ -1,0 +1,35 @@
+// _newsletter.scss
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.newsletter-signup {
+    background-color: $white-color;
+    padding: 20px 600px;
+    text-align: center;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 36px;
+        color: $secondary-color;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 18px;
+        color: $text-color;
+    }
+
+    input[type="email"] {
+        padding: 10px 20px;
+        width: 400px;
+        margin-bottom: 10px;
+        border: 1px solid $secondary-color;
+        border-radius: $border-radius;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        @extend .common-button;
+    }
+}

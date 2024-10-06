@@ -1,0 +1,27 @@
+// _footer.scss
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.footer {
+    background-color: $secondary-color;
+    color: $white-color;
+    padding: 20px 40px;
+    text-align: center;
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: $white-color;
+            font-weight: bold;
+        }
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}

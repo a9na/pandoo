@@ -1,0 +1,46 @@
+// _hero.scss
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.hero {
+    background-image: url('./images/wind-turbines.png');
+    height: 400px;
+    color: $white-color;
+
+    @include flex-center;
+    justify-content: space-between;
+    padding: 50px;
+
+    &__content {
+        max-width: 100%;
+        .paragraph-container {
+            display: flex;
+            background-color: $primary-color;
+            width: 627px;
+            height: 228px;
+            justify-content: flex-end; 
+            align-items: center; 
+            margin-left: 40px;
+        }
+        
+        .paragraph {
+            background-color: $secondary-color; 
+            width: 595px;
+            height: 100%; 
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-left: 12px;
+        }
+
+        p {
+            @extend .common-text; 
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

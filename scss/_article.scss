@@ -1,0 +1,88 @@
+// _article.scss
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.article-container {
+    background-color: $text-color;
+    color: $white-color;
+    padding: 40px 20px;
+
+    &__windmill {
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center; 
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &__wind-farm {
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: center; 
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .windmill-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+
+        &__text {
+            margin-right: 100px;
+            padding-bottom: 120px;
+        }
+           
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 42.26px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            text-align: left;
+        }    
+    }
+
+    .wind-farm-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+
+        &__text {
+            margin-left: 100px;
+            padding-bottom: 60px;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 42.26px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.13px;
+            text-align: left;
+        }    
+    }
+}

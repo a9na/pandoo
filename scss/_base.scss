@@ -1,0 +1,10 @@
+// _base.scss
+@import 'variables';
+@import 'mixins';
+
+body {
+    @include global-font;
+    margin: 0;
+    padding: 0;
+    background-color: $white-color;
+}

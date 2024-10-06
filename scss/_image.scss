@@ -1,0 +1,31 @@
+// _image.scss
+@import 'variables';
+@import 'mixins';
+
+.image {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    background-color: $primary-color; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 40px;
+
+    &__windmill {
+        width: 664px;
+        height: 480px;
+        background-image: url('../images/windmill.png');  
+        background-size: cover; 
+        background-repeat: no-repeat;
+        margin-right: auto;
+    }
+
+    &__wind-farm {
+        width: 664px;
+        height: 480px;
+        background-image: url('../images/wind-farm.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+}
