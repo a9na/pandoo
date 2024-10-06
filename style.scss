@@ -57,6 +57,7 @@ body {
     padding: 20px;
     @include flex-center;
     justify-content: space-between;
+    max-width: 100%;
 
     &__logo {
         width: 120px;
@@ -68,6 +69,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 100%;
 
         ul {
             list-style: none;
@@ -107,7 +109,7 @@ body {
     padding: 50px;
 
     &__content {
-        max-width: 50%;
+        max-width: 100%;
         .paragraph-container {
             display: flex;
             background-color: $primary-color;
@@ -137,7 +139,7 @@ body {
     }
 
     img {
-        max-width: 50%;
+        max-width: 100%;
     }
 }
 
@@ -157,6 +159,8 @@ body {
     .cards {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
 
         h4 {
             font-style: italic;
@@ -166,7 +170,7 @@ body {
             background-color: $secondary-color; 
             padding: 20px;
             color: $white-color;
-            max-width: 600px; 
+            max-width: 100%; 
             margin: 32px 8px; 
             text-align: left;
 
@@ -366,7 +370,7 @@ body {
 
     &__input {
         position: relative;
-        width: 400px; 
+        width: 100%; 
         
         input {
             width: 100%;
@@ -409,6 +413,7 @@ body {
     margin: 0;
     background-color: $primary-color;
     position: relative;
+    max-width: 100%;
 
     &__logo {
         margin-top: 20px;
