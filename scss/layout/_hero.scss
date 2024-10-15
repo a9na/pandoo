@@ -1,12 +1,9 @@
 // _hero.scss
-@import 'variables';
-@import 'mixins';
-@import 'common';
 
 .hero {
-    background-image: url('./images/wind-turbines.png');
+    background-image: url('../images/wind-turbines.png');
     height: 400px;
-    color: $white-color;
+    color: $white;
 
     @include flex-center;
     justify-content: space-between;

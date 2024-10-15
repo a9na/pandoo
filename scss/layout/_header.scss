@@ -1,26 +1,26 @@
 // _header.scss
-@import 'variables';
-@import 'mixins';
-@import 'common';
 
 .header {
     background-color: $primary-color;
-    padding: 20px;
+    height: 6.313rem;
     @include flex-center;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
 
     &__logo {
-        width: 120px;
+        width: 8rem;
         height: 51.75px;
-        margin-left: 6px;
+        padding-left: 2.172rem;
     }
 
     .nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        max-width: 100%;
+        justify-content: flex-end;
+        flex-direction: row;
+        column-gap: 1.5rem;
+        font-weight: 600;
 
         ul {
             list-style: none;
@@ -38,7 +38,7 @@
                 a {
                     text-decoration: none;
                     color: $secondary-color; 
-                    font-weight: bold;
+                    font-weight: 400;
                 }
             }
         }

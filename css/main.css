@@ -1,4 +1,4 @@
-.common-button, .header .nav__button {
+.common-button, .newsletter-signup input[type=submit], .header .nav__button {
   background-color: #fff;
   color: #333;
   padding: 10px 20px;
@@ -7,7 +7,7 @@
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 400;
   display: inline-block;
 }
 
@@ -19,7 +19,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 21.13px;
   text-align: left;
   margin: 0;
@@ -28,24 +28,28 @@ body {
 }
 
 .header {
-  background-color: #64e361;
-  padding: 20px;
+  background-color: #87DE87;
+  height: 6.313rem;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 .header__logo {
-  width: 120px;
+  width: 8rem;
   height: 51.75px;
-  margin-left: 6px;
+  padding-left: 2.172rem;
 }
 .header .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
+  justify-content: flex-end;
+  flex-direction: row;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  font-weight: 600;
 }
 .header .nav ul {
   list-style: none;
@@ -62,7 +66,7 @@ body {
 .header .nav ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 400;
 }
 .hero {
   background-image: url("../images/wind-turbines.png");
@@ -79,7 +83,7 @@ body {
 }
 .hero__content .paragraph-container {
   display: flex;
-  background-color: #64e361;
+  background-color: #87DE87;
   width: 627px;
   height: 228px;
   justify-content: flex-end;
@@ -108,7 +112,7 @@ body {
   margin-bottom: 30px;
   font-size: 32px;
   color: #333;
-  font-weight: bold;
+  font-weight: 400;
 }
 .cards-section .cards {
   display: flex;
@@ -202,7 +206,7 @@ body {
 }
 .article-container .windmill-section h3 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 42.26px;
   text-align: left;
   margin-bottom: 20px;
@@ -226,7 +230,7 @@ body {
 }
 .article-container .wind-farm-section h3 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 42.26px;
   text-align: left;
   margin-bottom: 20px;
@@ -237,16 +241,35 @@ body {
   line-height: 21.13px;
   text-align: left;
 }
-.article-container .image {
+.article-container .learn-more {
+  display: flex;
+  justify-content: center;
+}
+.article-container .learn-more button {
+  align-items: center;
+  background-color: #87DE87;
+  color: #333333;
+  font-size: 1.1rem;
+  line-height: 1.321rem;
+  width: 16.5rem;
+  height: 4.5rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.image {
   width: 696px;
   height: 480px;
   display: flex;
-  background-color: #64e361;
+  background-color: #87DE87;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
-.article-container .image__windmill {
+.image__windmill {
   width: 664px;
   height: 480px;
   background-image: url("../images/windmill.png");
@@ -254,7 +277,7 @@ body {
   background-repeat: no-repeat;
   margin-right: auto;
 }
-.article-container .image__wind-farm {
+.image__wind-farm {
   width: 664px;
   height: 480px;
   background-image: url("../images/wind-farm.png");
@@ -262,192 +285,46 @@ body {
   background-repeat: no-repeat;
   margin-left: auto;
 }
-.article-container .learn-more {
-  background-color: #64e361;
-  color: #333;
-  padding: 10px 20px;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 264px;
-  height: 72px;
-  border-radius: 12px 12px 12px 12px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.13px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-  display: block;
-}
 
 .newsletter-signup {
   background-color: #fff;
   padding: 20px 600px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.newsletter-signup h2 {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-.newsletter-signup__input {
-  position: relative;
-  width: 100%;
-}
-.newsletter-signup__input input {
-  width: 100%;
-  height: 50px;
-  padding-right: 110px;
-  padding-left: 20px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-sizing: border-box;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.newsletter-signup__input input::-moz-placeholder {
-  font-style: italic;
-}
-.newsletter-signup__input input::placeholder {
-  font-style: italic;
-}
-.newsletter-signup__input button {
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-  height: 60%;
-  padding: 0 18px;
-  border: none;
-  border-radius: 12px;
-  background-color: #64e361;
-  color: #333;
-  font-weight: bolder;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-  color: #333;
-  padding: 0;
-  margin: 0;
-  background-color: #64e361;
-  position: relative;
-  max-width: 100%;
-}
-.footer__logo {
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-.footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
   margin: 0 auto;
-  padding-bottom: 60px;
 }
-.footer__content p {
-  margin: 0;
+.newsletter-signup h3 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 400;
 }
-.footer__content .info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 30px;
+.newsletter-signup p {
+  font-size: 18px;
+  color: #444;
 }
-.footer__content .info__heading {
-  font-size: 24px;
-  margin-bottom: 4px;
-  font-weight: 700;
-}
-.footer__content .info .company-adress {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 0;
+.newsletter-signup input[type=email] {
+  padding: 10px 20px;
+  width: 400px;
   margin-bottom: 10px;
-  text-decoration: none;
-  margin-bottom: 6px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
 }
-.footer__content .info .company-adress a {
-  text-decoration: none;
-  color: #333;
-}
-.footer__links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
-}
-.footer__links .company,
-.footer__links .products {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-right: 250px;
-}
-.footer__links .company__heading,
-.footer__links .products__heading {
-  font-weight: 700;
-}
-.footer__links .company__info,
-.footer__links .products__info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 0;
-}
-.footer__links .company__info a,
-.footer__links .products__info a {
-  text-decoration: none;
-  color: #333;
-}
-.footer__socials {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.footer__socials__heading {
-  font-weight: 700;
-}
-.footer__socials__icons {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-.footer__socials__icons a {
-  margin-right: 20px;
-}
-.footer__bottom {
-  position: absolute;
+.footer {
   background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+}
+.footer .footer-links {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  margin-bottom: 20px;
 }
-.footer__bottom__links {
-  margin-right: 50px;
-}
-.footer__bottom__trademark {
-  margin-left: 30px;
-}
-.footer__bottom a {
-  color: #fff;
+.footer .footer-links a {
   text-decoration: none;
-  font-size: 0.9rem;
-}/*# sourceMappingURL=style.css.map */
+  color: #fff;
+  font-weight: 400;
+}
+.footer .footer-text {
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */

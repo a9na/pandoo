@@ -1,11 +1,8 @@
 // _footer.scss
-@import 'variables';
-@import 'mixins';
-@import 'common';
 
 .footer {
     background-color: $secondary-color;
-    color: $white-color;
+    color: $white;
     padding: 20px 40px;
     text-align: center;
 
@@ -16,8 +13,8 @@
 
         a {
             text-decoration: none;
-            color: $white-color;
-            font-weight: bold;
+            color: $white;
+            font-weight: 400;
         }
     }
 

@@ -1,10 +1,7 @@
 // _newsletter.scss
-@import 'variables';
-@import 'mixins';
-@import 'common';
 
 .newsletter-signup {
-    background-color: $white-color;
+    background-color: $white;
     padding: 20px 600px;
     text-align: center;
     margin: 0 auto;
@@ -12,7 +9,7 @@
     h3 {
         font-size: 36px;
         color: $secondary-color;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     p {

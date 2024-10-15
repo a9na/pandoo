@@ -2,8 +2,8 @@
 @import 'mixins';
 
 .common-button {
-    @include button($white-color, $secondary-color);
-    font-weight: bold;
+    @include button($white, $secondary-color);
+    font-weight: 400;
     display: inline-block;
 }
 
