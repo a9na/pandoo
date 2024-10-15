@@ -1,6 +1,6 @@
 .common-button, .newsletter-signup input[type=submit] {
   background-color: #fff;
-  color: #333;
+  color: #333333;
   padding: 10px 20px;
   border: none;
   text-align: center;
@@ -37,7 +37,7 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
-.header__logo {
+.header .header__logo {
   width: 8rem;
   height: 51.75px;
   padding-left: 2.172rem;
@@ -54,19 +54,13 @@ body {
 .header .nav ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 .header .nav ul li {
   margin-right: 20px;
 }
-.header .nav ul li:last-child {
-  margin-right: 20px;
-}
 .header .nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 400;
+  color: #333333;
 }
 .header .nav .nav__button {
   background-color: #fff;
@@ -105,7 +99,7 @@ body {
   margin-left: 40px;
 }
 .hero__content .paragraph {
-  background-color: #333;
+  background-color: #333333;
   width: 595px;
   height: 100%;
 }
@@ -125,7 +119,7 @@ body {
 .cards-section h2 {
   margin-bottom: 30px;
   font-size: 32px;
-  color: #333;
+  color: #333333;
   font-weight: 400;
 }
 .cards-section .cards {
@@ -138,7 +132,7 @@ body {
   font-style: italic;
 }
 .cards-section .cards .card {
-  background-color: #333;
+  background-color: #333333;
   padding: 20px;
   color: #fff;
   max-width: 100%;
@@ -308,7 +302,7 @@ body {
 }
 .newsletter-signup h3 {
   font-size: 36px;
-  color: #333;
+  color: #333333;
   font-weight: 400;
 }
 .newsletter-signup p {
@@ -319,12 +313,12 @@ body {
   padding: 10px 20px;
   width: 400px;
   margin-bottom: 10px;
-  border: 1px solid #333;
+  border: 1px solid #333333;
   border-radius: 5px;
   font-size: 16px;
 }
 .footer {
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
   padding: 20px 40px;
   text-align: center;
