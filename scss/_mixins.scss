@@ -1,14 +1,6 @@
 // _mixins.scss
 @import 'variables';
 
-@mixin global-font {
-    font-family: 'Raleway', sans-serif; 
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.13px;
-    text-align: left;
-}
-
 @mixin flex-center {
     display: flex;
     justify-content: center;

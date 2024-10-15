@@ -1,10 +1,10 @@
-// _base.scss
-@import 'variables';
-@import 'mixins';
-
-body {
-    @include global-font;
+* {
     margin: 0;
     padding: 0;
-    background-color: $white;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
