@@ -1,4 +1,4 @@
-.common-button, .newsletter-signup input[type=submit], .header .nav__button {
+.common-button, .newsletter-signup input[type=submit] {
   background-color: #fff;
   color: #333;
   padding: 10px 20px;
@@ -68,6 +68,20 @@ body {
   color: #333;
   font-weight: 400;
 }
+.header .nav .nav__button {
+  background-color: #fff;
+  color: #333333;
+  padding-left: 0.75rem;
+  padding-right: 0.688rem;
+  height: 2.5rem;
+  margin-right: 1.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+  text-transform: uppercase;
+  border: none;
+}
+
 .hero {
   background-image: url("../images/wind-turbines.png");
   height: 400px;
