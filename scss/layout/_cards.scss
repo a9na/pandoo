@@ -1,78 +1,100 @@
 // _cards.scss
 
 .cards-section {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $white;
-    padding: 40px 20px;
+    padding: 7.5rem 0px 7.5rem 0px;
+    max-width: 106.5rem;
+    margin: 0 auto;
 
     h2 {
-        margin-bottom: 30px;
-        font-size: 32px;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        text-align: center;
+        padding-bottom: 5.375rem;
         color: $grey;
-        font-weight: 400;
+        font-weight: 700;
     }
 
     .cards {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: row;
-
-        h4 {
-            font-style: italic;
-        }
+        align-items: center;
+        gap: 0px 1.5rem;
 
         .card {
-            background-color: $grey; 
-            padding: 20px;
-            color: $white;
-            max-width: 100%; 
-            margin: 32px 8px; 
-            text-align: left;
-
-            &__header {
-                display: flex;
-                align-items: center;
-                margin-bottom: 5px; 
-
-                &__icon {
-                    background-color: #38D377; 
-                    border-radius: 50%;
-                    width: 80px;
-                    height: 80px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 20px; 
-                }
-                
-                &__icon img {
-                    width: 50%; 
-                    height: auto;
-                }
-            }
-        }
-        
-        .card-text-container {
             display: flex;
-            flex-direction: column; 
-            justify-content: center; 
+            flex-direction: column;
+            background-color: $grey; 
+            justify-content: center;
+            align-items: flex-start;
+            color: $white;
+            font-size: 1.125rem;
+            padding-top: 2rem;
 
-            .card-title, .card-subtitle {
-                display: block;
+            .card__header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-        }
 
-        .card-title {
-            font-size: 24px;
-            color: white;
-            margin: 10px 2px;
+            .card-text-container {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-weight: 600;
+                    padding-left: 1.5rem;
+                    padding-bottom: 0.313rem;
+                }
+
+                p:nth-child(2) {
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+            
+
+            .card__header__icon {
+                background-color: $primary-color; 
+                border-radius: 50%;
+                width: 7.5rem;
+                height: 7.5rem;
+                margin: 0px 0px 1.063rem 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    height: 4.375rem;
+                    width: 4.375rem;
+                }
+
+                .icon-connection {
+                    height: 3.375rem;
+                }
+
+                .icon-windmill {
+                    width: 2.858rem;
+                    height: 3.875rem;
+                }
+            }
+            
+
+        .card-text {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.313rem;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2.125rem;
+            padding-bottom: 2rem;
         }
-        
-        .card-subtitle {
-            font-size: 18px;
-            color: #b0b0b0;
-            margin: 0;
-        }
-    }
+    }   
+
+    }     
 }
