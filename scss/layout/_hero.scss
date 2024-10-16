@@ -2,42 +2,40 @@
 
 .hero {
     background-image: url('../images/wind-turbines.png');
-    height: 400px;
-    color: $white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    max-width: 120rem;
+    height: 40rem;
+    margin: 0 auto;
 
-    @include flex-center;
-    justify-content: space-between;
-    padding: 50px;
-
-    &__content {
-        max-width: 100%;
-        .paragraph-container {
-            display: flex;
-            background-color: $primary-color;
-            width: 627px;
-            height: 228px;
-            justify-content: flex-end; 
-            align-items: center; 
-            margin-left: 40px;
-        }
+    .hero__content {
+        width: 39.188rem;
+        height: 14.25rem;
+        background-color: $primary-color;
+        margin-left: 12.25rem;
         
-        .paragraph {
-            background-color: $grey; 
-            width: 595px;
-            height: 100%; 
+        .paragraph-container {
+            background-color: $grey;
+            color: $white;
+            width: 37.188rem;
+            max-width: 37.188rem;
+            height: 14.25rem;
+            padding-left: 1.5rem;
+            padding-right: 1.188rem;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.313rem;
+            margin-left: 2rem;
         }
 
         h1 {
-            font-size: 48px;
-            margin-left: 12px;
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 3.5rem;
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
         }
 
-        p {
-            @extend .common-text; 
-        }
-    }
-
-    img {
-        max-width: 100%;
     }
 }

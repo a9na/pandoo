@@ -11,7 +11,7 @@
   display: inline-block;
 }
 
-.common-text, .hero__content p {
+.common-text {
   font-size: 18px;
   margin-left: 12px;
 }
@@ -62,41 +62,44 @@ a {
   line-height: 1.313rem;
   text-transform: uppercase;
   border: none;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .hero {
   background-image: url("../images/wind-turbines.png");
-  height: 400px;
-  color: #fff;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+  max-width: 120rem;
+  height: 40rem;
+  margin: 0 auto;
 }
-.hero__content {
-  max-width: 100%;
-}
-.hero__content .paragraph-container {
-  display: flex;
+.hero .hero__content {
+  width: 39.188rem;
+  height: 14.25rem;
   background-color: #87DE87;
-  width: 627px;
-  height: 228px;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: 40px;
+  margin-left: 12.25rem;
 }
-.hero__content .paragraph {
+.hero .hero__content .paragraph-container {
   background-color: #333333;
-  width: 595px;
-  height: 100%;
+  color: #fff;
+  width: 37.188rem;
+  max-width: 37.188rem;
+  height: 14.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.188rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+  margin-left: 2rem;
 }
-.hero__content h1 {
-  font-size: 48px;
-  margin-left: 12px;
-}
-.hero img {
-  max-width: 100%;
+.hero .hero__content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .cards-section {
