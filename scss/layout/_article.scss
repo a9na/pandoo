@@ -1,86 +1,82 @@
 // _article.scss
 
-.article-container {
-    background-color: $text-color;
+.energy-farm {
+    background-color: $grey;
     color: $white;
-    padding: 40px 20px;
-
-    &__windmill {
-        display: flex; 
-        justify-content: flex-end; 
-        align-items: center; 
-        margin-bottom: 30px;
-        width: 100%;
-    }
-
-    &__wind-farm {
-        display: flex; 
-        justify-content: flex-start; 
-        align-items: center; 
-        margin-bottom: 30px;
-        width: 100%;
-    }
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-bottom: 6rem;
 
     h2 {
-        font-size: 38px;
+        font-size: 3rem;
+        line-height: 3.5rem;
         text-align: center;
-        margin-bottom: 80px;
+        padding: 4rem 0px 7.313rem 0px;
     }
 
-    .windmill-section {
+    .energy-farm__info {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        width: 50%;
-        padding: 10px;
+        justify-content: space-between;
+        padding-bottom: 6rem;
+        gap: 8rem 0px;
+        max-width: 106.5rem;
+        margin: 0 auto;
+        flex-flow: row wrap;
 
-        &__text {
-            margin-right: 100px;
-            padding-bottom: 120px;
-        }
-           
-        h3 {
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 42.26px;
-            text-align: left;
-            margin-bottom: 20px;
+        .image-container__one {
+            background-color: $primary-color;
+            width: 43.5rem;
+            height: 30rem;
+
+            .image__one {
+                background-image: url(../images/windmill.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 41.5rem;
+                height: 30rem;
+            }
         }
 
-        p {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 21.13px;
-            text-align: left;
-        }    
+        .image-container__two {
+            background-color: $primary-color;
+            width: 43.5rem;
+            height: 30rem;
+
+            .image__two {
+                background-image: url(../images/wind-farm.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 41.5rem;
+                height: 30rem;
+                margin-left: 2rem;
+            }
+
+        }
     }
 
-    .wind-farm-section {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        padding: 10px;
+    .energy-farm__text_one, .energy-farm__text_two {
+        max-width: 43.5rem;
 
-        &__text {
-            margin-left: 100px;
-            padding-bottom: 60px;
+        p {
+            font-size: 1.125rem;
+            line-height: 1.321rem;
+            padding-bottom: 0.75rem;
         }
 
         h3 {
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 42.26px;
-            text-align: left;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            line-height: 2.625rem;
+            padding-bottom: 0.75rem;
         }
+    }
 
-        p {
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 21.13px;
-            text-align: left;
-        }    
+    .energy-farm__text_one:first-child {
+        padding-left: 9rem;
+    }
+
+    .energy-farm__text_two {
+        padding: 0 9rem 0 0;
     }
 
     .learn-more {
