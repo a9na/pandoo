@@ -60,6 +60,7 @@ a {
 }
 .hero .hero__content {
   width: 39.188rem;
+  max-width: 39.188rem;
   height: 14.25rem;
   background-color: #87DE87;
   margin-left: 12.25rem;
@@ -335,14 +336,13 @@ a {
 }
 .footer .footer__content {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
 }
 .footer .footer__content .info {
   display: flex;
   flex-direction: column;
-  padding: 0px 15.625rem 0px 6.75rem;
+  padding: 0px 11.625rem 0px 6.75rem;
 }
 .footer .footer__content .info .info__heading {
   font-size: 1.5rem;
@@ -353,11 +353,11 @@ a {
 .footer .footer__content .info p, .footer .footer__content .info a {
   padding-bottom: 0.625rem;
 }
-.footer .footer__content .info a:first-of-type {
+.footer .footer__content .info a:first-child {
   padding-bottom: 1.125rem;
 }
-.footer .footer__content .info a:last-of-type {
-  padding-bottom: 6rem;
+.footer .footer__content .info a:last-child {
+  padding-bottom: 3.489rem;
 }
 .footer .footer__content .footer__links {
   display: flex;
@@ -387,22 +387,27 @@ a {
   display: flex;
   flex-direction: column;
   padding-right: 15.75rem;
-  gap: 2rem 1.5rem;
 }
 .footer .footer__content .footer__socials .footer__socials__heading {
   color: #000000;
   font-size: 1.125rem;
   line-height: 1.313rem;
   font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.footer .footer__content .footer__socials .footer__socials__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem 1.5rem;
 }
 
-.trademark {
+.copyright {
   background: #333333;
   padding: 0.813rem 6.75rem 0.875rem 6.75rem;
   margin: 0 auto;
   max-width: 106.5rem;
 }
-.trademark .trademark__text {
+.copyright .copyright__text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -411,13 +416,9 @@ a {
   font-weight: 400;
   line-height: 1.313rem;
 }
-.trademark .trademark__text a:first-child {
-  padding-left: 0rem;
-}
-.trademark .trademark__text a:nth-child(2) {
+.copyright .copyright__text a:nth-child(2) {
   margin-left: auto;
 }
-.trademark .trademark__text a:last-child {
+.copyright .copyright__text a:last-child {
   padding-left: 2rem;
-  padding-right: 6.75rem;
 }/*# sourceMappingURL=main.css.map */

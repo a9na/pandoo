@@ -1,10 +1,10 @@
-.trademark {
+.copyright {
     background: $grey;
     padding: 0.813rem 6.75rem 0.875rem 6.75rem;
     margin: 0 auto;
     max-width: 106.5rem;
 
-    .trademark__text {
+    .copyright__text {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -13,17 +13,12 @@
         font-weight: 400;
         line-height: 1.313rem;
 
-        a:first-child {
-            padding-left: 0rem; 
-        }
-
         a:nth-child(2) {
             margin-left: auto; 
         }
 
         a:last-child {
             padding-left: 2rem;
-            padding-right: 6.75rem; 
         }
     }
 }
