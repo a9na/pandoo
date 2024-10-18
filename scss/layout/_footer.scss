@@ -1,24 +1,96 @@
 // _footer.scss
 
 .footer {
-    background-color: $grey;
-    color: $white;
-    padding: 20px 40px;
-    text-align: center;
+    background-color: $primary-color;
+    color: $grey;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+    max-width: 120rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
 
-    .footer-links {
+    .footer__logo {
+        width: 13.938rem;
+        height: 6.011;
+        padding: 3rem 0px 1.875rem 6.75rem;
+    }
+
+    .footer__content {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        align-items: flex-start;
+        flex-direction: row;
 
-        a {
-            text-decoration: none;
-            color: $white;
-            font-weight: 400;
+        .info {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15.625rem 0px 6.75rem;
+        
+            .info__heading {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                padding-bottom: 0.625rem;
+            }
+        
+            p, a {
+                padding-bottom: 0.625rem;
+            }
+        
+            a:first-of-type {
+                padding-bottom: 1.125rem;
+            }
+        
+            a:last-of-type {
+                padding-bottom: 6rem;
+            }
+        }        
+
+        .footer__links {
+            display: flex;
+            flex-direction: column;
+            padding-right: 18.75rem;
+            
+            .products__heading {
+                font-weight: 600;
+                padding-bottom: 0.625rem;
+            }
+
+            a {
+                padding-bottom: 0.625rem;
+            }
+        }
+
+
+        .footer__company {
+            display: flex;
+            flex-direction: column;
+            padding-right: 18.75rem;
+
+            .company__heading {
+                font-weight: 600;
+                padding-bottom: 0.625rem;
+            }
+
+            a {
+                padding-bottom: 0.625rem;
+            }
+        }
+
+        .footer__socials {
+            display: flex;
+            flex-direction: column;
+            padding-right: 15.75rem;
+            gap: 2rem 1.5rem;
+            
+            .footer__socials__heading {
+                color: $black;
+                font-size: 1.125rem;
+                line-height: 1.313rem;
+                font-weight: 600;
+            }
         }
     }
-
-    .footer-text {
-        font-size: 14px;
-    }
+    
 }
