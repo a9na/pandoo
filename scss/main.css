@@ -10,6 +10,80 @@ a {
   color: inherit;
 }
 
+.slide__wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1950px;
+  width: 100%;
+}
+
+.splide .splide__img {
+  max-width: 34.5rem;
+  width: 100%;
+  max-height: 20rem;
+  height: 100%;
+}
+.splide h2 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3.522rem;
+  font-weight: 700;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.splide .splide__arrows {
+  position: absolute;
+  top: 70%;
+  left: 7em;
+  right: 7em;
+}
+@media (max-width: 375px) {
+  .splide .splide__arrows {
+    top: 80%;
+    right: 2em;
+    left: 2em;
+  }
+}
+@media (max-width: 640px) {
+  .splide .splide__arrows {
+    top: 85%;
+  }
+}
+.splide .splide__arrow {
+  background: #87DE87;
+  width: 6rem;
+  height: 6rem;
+  opacity: 1;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .splide .splide__arrow {
+    background: #FEFEFE;
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+  }
+}
+@media (max-width: 640px) {
+  .splide .splide__arrow {
+    width: 3rem;
+    height: 3rem;
+    opacity: 1;
+  }
+}
+@media (max-width: 375px) {
+  .splide .splide__arrow img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .splide .splide__arrow img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 .header {
   background-color: #87DE87;
   display: grid;

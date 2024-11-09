@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanDoo</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./js/carousel.js"></script>
 </head>
 <body>
     <header class="header">
@@ -121,6 +127,60 @@
         </div>
     </section>
 
+    <div class="slide__wrapper">
+        <section class="splide" aria-label="Slide Section">
+        <div class="splide__title">
+            <h2>Section Title</h2>
+        </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="./slider-images/solar-system.png"
+                  alt="Solar system"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="./slider-images/wind-turbines-afar.png"
+                  alt="Wind turbines from afar"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="./slider-images/wind-farm.png"
+                  alt="wind farm"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="./slider-images/windrader.png"
+                  alt="windrader"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="splide__img"
+                  src="./slider-images/windmill.png"
+                  alt="windmill"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <img src="./slider-images/arrow-left.svg" alt="arrow left" />
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <img src="./slider-images/arrow-right.svg" alt="arrow right" />
+            </button>
+        </div>        
+        </section>
+      </div>
     <section class="newsletter-signup">
         <h2>Section Title</h2>
         <p>You don't frighten us. English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.</p>

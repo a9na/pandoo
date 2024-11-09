@@ -1,17 +1,15 @@
 // main.scss
 
-@import 'variables';
-
-@import 'base';
-
+@import 'variables';       
+@import 'mixins';         
+@import 'base';            
 @import 'typography/typography.scss';
+@import 'splide';          
 
-@import 'layout/header';
+@import 'layout/header';  
 @import 'layout/hero';
 @import 'layout/cards';
 @import 'layout/article';
 @import 'layout/newsletter';
 @import 'layout/footer';
 @import 'layout/copyright';
-
-

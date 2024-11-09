@@ -1,0 +1,22 @@
+@import 'variables'; // Make sure the variables file is imported first
+
+// Mixin for mobile styles
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+      @content;
+    }
+  }
+  
+  // Mixin for tablet styles
+  @mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+  
+  // Mixin for desktop styles
+  @mixin desktop {
+    @media (max-width: #{$desktop-width}) {
+      @content;
+    }
+  }
