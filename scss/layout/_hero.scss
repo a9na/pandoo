@@ -9,12 +9,36 @@
     height: 40rem;
     margin: 0 auto;
 
+    @include tablet {
+        background-image: url('../images/wind-turbines.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40rem;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
     .hero__content {
+        display: flex;
+        flex-direction: column;
         width: 39.188rem;
         max-width: 39.188rem;
         height: 14.25rem;
         background-color: $primary-color;
         margin-left: 12.25rem;
+
+        @include tablet {
+            width: 18.28rem;
+            height: 17.28rem;
+            padding-bottom: 3rem;
+            margin-right: 18rem;
+        }
         
         .paragraph-container {
             background-color: $grey;
@@ -28,6 +52,17 @@
             font-size: 1.125rem;
             line-height: 1.313rem;
             margin-left: 2rem;
+
+            @include tablet {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                background-color: $grey;
+                color: $white;
+                padding: 2rem 2rem 4rem 2rem;
+                width: 18.28rem;
+            }
         }
 
         h1 {
@@ -39,4 +74,52 @@
         }
 
     }
+}
+
+.hero-mobile {
+    display: none; 
+
+    @include mobile {
+        display: flex; 
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    img {
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-position: center; 
+        width: 100%;
+        height: 28.938rem;
+    }
+
+    .paragraph-container-mobile {
+        background-color: $primary-color;
+        padding-bottom: 3.1rem;
+
+        .paragraph-mobile {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: $grey;
+            color: $white;
+            padding: 2rem 2rem 0 2rem;
+
+            h1 {
+                font-size: 2.25rem;
+                font-weight: 600;
+                line-height: 2.625rem;
+                padding-bottom: 1rem;
+            } 
+
+            p  {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
 }

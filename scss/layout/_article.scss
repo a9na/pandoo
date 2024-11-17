@@ -7,11 +7,29 @@
     margin: 0 auto;
     padding-bottom: 6rem;
 
+    @include mobile {
+        padding-bottom: 3rem;
+    }
+
     h2 {
         font-size: 3rem;
         line-height: 3.5rem;
         text-align: center;
         padding: 4rem 0px 7.313rem 0px;
+
+        @include tablet {
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 2.625rem;
+            padding: 3rem 0 2.375rem 0;
+        }
+
+        @include mobile {
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 2.625rem;
+            padding: 3rem 0 2.375rem 0;
+        }
     }
 
     .energy-farm__info {
@@ -19,15 +37,33 @@
         align-items: center;
         justify-content: space-between;
         padding-bottom: 6rem;
-        gap: 8rem 0px;
+        gap: 4rem 0px;
         max-width: 106.5rem;
         margin: 0 auto;
         flex-flow: row wrap;
+
+        @include mobile {
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 0;
+        }
 
         .image-container__one {
             background-color: $primary-color;
             width: 43.5rem;
             height: 30rem;
+
+            @include tablet {
+                order: 0;
+                padding-bottom: 1rem;
+                max-width: 40rem;
+            }
+
+            @include mobile {
+                order: 0;
+                padding-bottom: 1rem;
+                max-width: 23.438rem;
+            }
 
             .image__one {
                 background-image: url(../images/windmill.png);
@@ -35,6 +71,14 @@
                 background-repeat: no-repeat;
                 width: 41.5rem;
                 height: 30rem;
+
+                @include tablet {
+                    width: 40rem;
+                }
+
+                @include mobile {
+                    width: 23.438rem;
+                }
             }
         }
 
@@ -43,13 +87,32 @@
             width: 43.5rem;
             height: 30rem;
 
+            @include tablet {
+                order: 2;
+                max-width: 40rem;
+                padding-bottom: 1rem;
+            }
+
+            @include mobile {
+                order: 2;
+                max-width: 23.438rem;
+                padding-bottom: 1rem;
+            }
+
             .image__two {
                 background-image: url(../images/wind-farm.png);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 41.5rem;
                 height: 30rem;
-                margin-left: 2rem;
+
+                @include tablet {
+                    width: 40rem;
+                }
+
+                @include mobile {
+                    width: 23.438rem;
+                }
             }
 
         }
@@ -68,20 +131,52 @@
             font-size: 2rem;
             line-height: 2.625rem;
             padding-bottom: 0.75rem;
+
+            @include tablet {
+                text-align: center;
+            }
+
+            @include mobile {
+                text-align: center;
+            }
         }
     }
 
     .energy-farm__text_one:first-child {
         padding-left: 9rem;
+
+        @include tablet {
+            order: 1;
+            padding: 0 2rem 0 2rem;
+        }
+
+        @include mobile {
+            order: 1;
+            padding: 0 2rem 0 2rem;
+        }
     }
 
     .energy-farm__text_two {
         padding: 0 9rem 0 0;
+
+        @include tablet {
+            order: 3;
+            padding: 0 2rem 0 2rem;
+        }
+
+        @include mobile {
+            order: 3;
+            padding: 0 2rem 0 2rem;
+        }
     }
 
     .learn-more {
         display: flex;
         justify-content: center;
+
+        @include mobile {
+            display: none;
+        }
 
         button {
             align-items: center;

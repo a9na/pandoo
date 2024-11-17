@@ -7,23 +7,40 @@
     <link rel="stylesheet" href="./scss/main.css">
     <!--<link rel="stylesheet" href="./css/style.css">-->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />    
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./js/script.js"></script>
     <script defer src="./js/carousel.js"></script>
 </head>
 <body>
-    <header class="header">
-        <img src="./images/pandoo-logo.svg" class="header__logo" alt="PanDoo company logo">
-        <nav class="nav" aria-label="Main Navigation">
-                <a href="#">About</a>
-                <a href="#">Pricing</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            <button class="nav__button" aria-label="Get PanDoo Now">Get it now</button>
-        </nav>
-    </header>
+        <div class="nav" aria-label="Main Navigation">
+            <img src="./images/pandoo-logo.svg" class="header__logo" alt="PanDoo company logo">
+            <div class="nav__links">
+                <a href="">About</a>
+                <a href="">Pricing</a>
+                <a href="">Testimonials</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <button class="nav__button" aria-label="Get PanDoo Now">Get it now</button>
+            </div>
+            <button class="nav__hamburger">
+                <img src="./images/hamburger-button.svg" alt="">
+            </button>
+        </div>
+
+          <div class="menu">
+            <button class="menu__button-close"><img src="./images/button-close.svg" alt=""></button>
+            <ul class="menu__items">
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Pricing</a></li>
+                <li class="item"><a href="">Testimonials</a></li>
+                <li class="item"><a href="">Blog</a></li>
+                <li class="item"><a href="">Contact</a></li>
+            </ul>
+            <div class="menu__button">
+                <button>Get it now</button>
+              </div>
+        </div>
+
     <main>
     <section class="hero">
         <div class="hero__content">
@@ -37,6 +54,19 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="hero-mobile">
+            <img src="./images/wind-turbines-mobile.png" alt="">
+            <div class="paragraph-container-mobile">
+                <div class="paragraph-mobile">
+                    <h1>Hero Title</h1>
+                    <p>
+                        I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. 
+                        Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
+                    </p>
+                </div>
+            </div>
     </section>
 
     <section class="cards-section">
@@ -229,8 +259,10 @@
     <div class="copyright">
         <div class="copyright__text">
             <a href="">2020 &copy; PanDoo</a>
-            <a href="">GDPR</a>
-            <a href="">Privacy</a>
+            <div class="copyright__privacy">
+                <a href="">GDPR</a>
+                <a href="">Privacy</a>
+            </div>  
         </div>
     </div>  
 </body>

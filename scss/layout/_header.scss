@@ -1,6 +1,4 @@
-// _header.scss
-
-.header {
+.nav {
     background-color: $primary-color;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,34 +7,140 @@
     margin: 0 auto;
     color: $grey;
 
+    @include mobile {
+        max-width: 23.438rem;
+        height: 4rem;
+    }
+
     .header__logo {
         width: 7.5rem;
         height: 3.25rem;
-        padding: 1.5rem 0 2.172rem 6.75rem;
+        padding: 1.5rem 0 2.172rem 4.75rem;
+
+        @include tablet {
+            padding: 0 8.225rem 0 2rem;
+            width: 9.275rem;
+            height: 4rem;
+        }
+
+        @include mobile {
+            padding: 0 8.225rem 0 2rem;
+            width: 9.275rem;
+            height: 4rem;
+        }
     }
 
-    .nav {
+    .nav__links {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
         flex-direction: row;
-        column-gap: 1.5rem;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem;
         font-weight: 600;
 
-        .nav__button {
-            background-color: $white;
+        a {
+            text-decoration: none;
             color: $grey;
-            padding-left: 0.75rem;
-            padding-right: 0.688rem;
-            height: 2.5rem;
-            margin-right: 1.75rem;
-            font-weight: 700;
-            font-size: 1.125rem;
-            line-height: 1.313rem;
-            text-transform: uppercase;
+        }
+
+        @include tablet {
+            display: none; 
+        }
+
+        @include mobile {
+            display: none; 
+        }
+    }
+
+    .nav__button {
+        background-color: $white;
+        color: $grey;
+        padding: 0 0.75rem;
+        height: 2.5rem;
+        margin-right: 1.75rem;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.313rem;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .nav__hamburger {
+        display: none; 
+
+        @include mobile {
+            display: flex;
+            justify-content: flex-end;
             border: none;
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
             cursor: pointer;
+            background: transparent;
+            padding: 0.5rem 3.5rem 0.5rem 0.5rem;
+
+        }
+    }
+}
+
+.menu {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    color: $black;
+    z-index: 100; 
+    flex-direction: column;
+    padding: 2rem;
+
+    &.display {
+        display: flex;
+    }
+
+    .menu__button-close {
+        position: fixed;  
+        top: 1rem;          
+        right: 1rem;        
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu__items {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        list-style: none;
+        padding: 3rem 0 0 0;
+
+        li {
+            padding-bottom: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+
+    .menu__button {
+        display: flex;
+        justify-content: flex-start;
+        padding: 2.5rem 0;
+
+        button {
+          width: 10rem;
+          height: 3.5rem;
+          align-self: center;
+          font-size: 1.125rem;
+          background: $primary-color;
+          font-weight: 700;
+          border: none;
+          opacity: 1;
+          text-transform: uppercase;
         }
     }
 }

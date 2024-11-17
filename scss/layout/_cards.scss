@@ -9,6 +9,20 @@
     max-width: 106.5rem;
     margin: 0 auto;
 
+    @include tablet {
+        display: flex;
+        padding: 2.9813rem 0 3.25rem 0;
+        max-width: 25rem;
+        gap: 5.75rem 0rem;
+    }
+
+    @include mobile {
+        display: flex;
+        padding: 2.9813rem 0 3.25rem 0;
+        max-width: 19.5rem;
+        gap: 5.75rem 0rem;
+    }
+
     h2 {
         font-size: 3rem;
         line-height: 3.5rem;
@@ -16,6 +30,14 @@
         padding-bottom: 5.375rem;
         color: $grey;
         font-weight: 700;
+
+        @include tablet {
+            padding-bottom: 0.875rem;
+        }
+
+        @include mobile {
+            padding-bottom: 0.875rem;
+        }
     }
 
     .cards {
@@ -23,6 +45,18 @@
         flex-direction: row;
         align-items: center;
         gap: 0px 1.5rem;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
 
         .card {
             display: flex;
@@ -34,10 +68,28 @@
             font-size: 1.125rem;
             padding-top: 2rem;
 
+            @include tablet {
+                margin-bottom: 5rem;
+            }
+
+            @include mobile {
+                margin-bottom: 5rem;
+            }
+
             .card__header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @include tablet {
+                    margin: 0 auto;
+                }
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                }
             }
 
             .card-text-container {
@@ -50,11 +102,31 @@
                     font-weight: 600;
                     padding-left: 1.5rem;
                     padding-bottom: 0.313rem;
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                        text-align: center;
+                        padding-left: 0rem;
+                    }
+
+                    @include mobile {
+                        font-size: 1.5rem;
+                        text-align: center;
+                        padding-left: 0rem;
+                    }
                 }
 
                 p:nth-child(2) {
                     font-weight: 400;
                     font-style: italic;
+
+                    @include tablet {
+                        padding-bottom: 1.5rem;
+                    }
+
+                    @include mobile {
+                        padding-bottom: 1.5rem;
+                    }
                 }
             }
             
@@ -67,6 +139,16 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @include tablet {
+                    justify-self: center;
+                    margin: -5.5rem 0 2rem 0;
+                }
+
+                @include mobile {
+                    justify-self: center;
+                    margin: -5.5rem 0 2rem 0;
+                }
                 
                 img {
                     height: 4.375rem;
@@ -92,8 +174,15 @@
             padding-left: 2rem;
             padding-right: 2.125rem;
             padding-bottom: 2rem;
+
+            @include mobile {
+                font-size: 1.125rem;
+                line-height: 1.3125rem;
+                font-weight: 400;
+                padding: 0 1rem 1.5rem 1rem;
+                margin-left: 0;
+            }
         }
     }   
-
-    }     
+}     
 }

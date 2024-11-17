@@ -10,10 +10,34 @@
     padding-bottom: 3rem;
     margin: 0 auto;
 
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .footer__logo {
         width: 13.938rem;
         height: 6.011;
-        padding: 3rem 0px 1.875rem 6.75rem;
+        padding: 3rem 0 1.875rem 6.75rem;
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 0 12.97rem;
+        }
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 0 4.97rem;
+        }
     }
 
     .footer__content {
@@ -21,10 +45,34 @@
         align-items: flex-start;
         flex-direction: row;
 
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
         .info {
             display: flex;
             flex-direction: column;
             padding: 0px 11.625rem 0px 6.75rem;
+
+            @include tablet {
+                padding: 1.2rem 0 0 0;
+            }
+
+            @include mobile {
+                padding: 1.2rem 0 0 0;
+            }
         
             .info__heading {
                 font-size: 1.5rem;
@@ -50,6 +98,14 @@
             display: flex;
             flex-direction: column;
             padding-right: 18.75rem;
+
+            @include tablet {
+                padding: 0 0 3.38rem 0;
+            }
+
+            @include mobile {
+                padding: 0 0 3.38rem 0;
+            }
             
             .products__heading {
                 font-weight: 600;
@@ -67,6 +123,14 @@
             flex-direction: column;
             padding-right: 18.75rem;
 
+            @include tablet {
+                padding: 0 0 0 0;
+            }
+            
+            @include mobile {
+                padding: 0 0 0 0;
+            }
+
             .company__heading {
                 font-weight: 600;
                 padding-bottom: 0.625rem;
@@ -81,7 +145,15 @@
             display: flex;
             flex-direction: column;
             padding-right: 15.75rem;
-            
+
+            @include tablet {
+                padding: 3.38rem 0 0 0;
+            }
+
+            @include mobile {
+                padding: 3.38rem 0 0 0;
+            }
+
             .footer__socials__heading {
                 color: $black;
                 font-size: 1.125rem;
